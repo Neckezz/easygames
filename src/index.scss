@@ -21,15 +21,9 @@ header {
     .menu {
       display: flex;
       list-style: none;
-  
       li {
         margin-left:2rem;
         margin-right:1rem;
-  
-        &:first-child {
-          margin-left: 0;
-        }
-  
         a {
             text-decoration: none;
             color:black;
@@ -45,5 +39,19 @@ header {
             width:4rem;
         }
       }
+    }
+  }
+  .categories{
+    li{
+        margin-top:2rem;
+        list-style-type: none;
+        padding:1.5rem;
+        text-align: center;
+        a{
+            float:right;
+            font-size:1.5rem;
+            text-decoration: none;
+            color:black;
+        }
     }
   }

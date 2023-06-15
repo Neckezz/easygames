@@ -8,7 +8,7 @@ const Header = () => {
         <a href=""><img src={logo} alt="EasyGames" id="logo" /></a>
     </div>
         <ul className="menu">
-            <li><a href="">Categories</a></li>
+            <li><a href="" onclick='showCategories'>Categories</a></li>
             <li><a href=""><img src={account} alt="Account" /></a></li>
             <li><a href=""><img src={cart} alt="Cart" /></a></li>
         </ul>
