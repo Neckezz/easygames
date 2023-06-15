@@ -1,11 +1,16 @@
+import account from '../images/account.png';
+import cart from '../images/shopping-cart.png';
+import logo from '../images/logo.png'
 const Header = () => {
     return ( 
         <header>
-            <a href=""><img src="" alt="EasyGames"id="logo" /></a>
-            <ul>
-                <li><a href=""><img src="./images/account.png" alt="Account" /></a></li>
-                <li><a href=""><img src="./images/shopping-cart.png" alt="Cart" /></a></li>
-            </ul>
+<div className="logo">
+        <a href=""><img src={logo} alt="EasyGames" id="logo" /></a>
+    </div>
+        <ul className="menu">
+            <li><a href=""><img src={account} alt="Account" /></a></li>
+            <li><a href=""><img src={cart} alt="Cart" /></a></li>
+        </ul>
         </header>
      );
 }
