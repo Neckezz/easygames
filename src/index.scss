@@ -5,6 +5,7 @@ $background-color:#6f2232;
     margin:0px;
     box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;
+    list-style-type: none;
 }
 header {
     display: flex;
@@ -41,19 +42,38 @@ header {
         }
       }
     }
+    .categories{
+        li{
+            display:block;
+            a{
+                text-decoration: none;
+                color:black;
+            }
+        }
   }
-  .categories{
-    li{
-        list-style-type: none;
-        display:block;
+    .mobilemenu{
+        display:none;
         a{
+            font-size:1.6rem;
             text-decoration: none;
             color:black;
         }
+        img{
+            width:90px;
+            margin:20px;
+        }
     }
   }
+
   @media (max-width: 1024px){
-  
+  header{
+    .menu{
+        display:none;
+    }
+    .mobilemenu{
+        display:block;
+    }
+  }
   }
     
   
