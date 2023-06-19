@@ -1,6 +1,8 @@
 import account from '../images/account.png';
 import cart from '../images/shopping-cart.png';
 import logo from '../images/logo.png';
+import burger from '../images/burger.png';
+import Categories from './categories';
 import React, { useState } from 'react';
 
 const Header = () => {
@@ -27,15 +29,19 @@ const Header = () => {
         <li><a href=""><img src={cart} alt="Cart" /></a></li>
         
         <div className="categories" style={show}>
-        <ul>
-          <li><a href="">Playstation 5 games</a></li>
-          <li><a href="">Playstation 4 games</a></li>
-          <li><a href="">Xbox games</a></li>
-          <li><a href="">Nintendo Switch</a></li>
-          <li><a href="">PC Games</a></li>
-        </ul>
+        <Categories/>
       </div>
       </ul>
+      <div className="mobilemenu">
+            <img src={burger} alt="burger" />
+            <ul>
+              <div className="icons">
+              <a href=""><img src={account} alt="Account" /></a>
+              <a href=""><img src={cart} alt="Cart" /></a>
+              </div>
+              <Categories/>
+            </ul>
+      </div>
     </header>
   );
 };
