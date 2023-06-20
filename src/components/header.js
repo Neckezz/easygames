@@ -1,13 +1,27 @@
 import account from '../images/account.png';
-import cart from '../images/shopping-cart.png';
+import cart from '../images/shopping-cart .png';
+import accountB from '../images/accountB.png';
+import cartB from '../images/shopping-cartB .png';
 import logo from '../images/logo.png';
 import burger from '../images/burger.png';
 import Categories from './categories';
+import closeIcon from '../images/x.png';
 import React, { useState } from 'react';
 
 const Header = () => {
-  const [display, setDisplay] = useState(false);
 
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
+
+  const [display, setDisplay] = useState(false);
   const handleClick = (event) => {
     event.preventDefault();
     setDisplay(!display);
@@ -24,23 +38,23 @@ const Header = () => {
       </div>
       
       <ul className="menu">
-        <li><a href="#" onClick={handleClick}>Categories</a></li>
-        <li><a href=""><img src={account} alt="Account" /></a></li>
-        <li><a href=""><img src={cart} alt="Cart" /></a></li>
+        <li id="categories"><a href="#" onClick={handleClick}>Categories</a></li>
+        <li><a href=""><img src={accountB} alt="Account" /></a></li>
+        <li><a href=""><img src={cartB} alt="Cart" /></a></li>
         
         <div className="categories" style={show}>
         <Categories/>
       </div>
       </ul>
-      <div className="mobilemenu">
-            <img src={burger} alt="burger" />
-            <ul>
-              <div className="icons">
-              <a href=""><img src={account} alt="Account" /></a>
-              <a href=""><img src={cart} alt="Cart" /></a>
-              </div>
+      
+      <div className="mobile-menu">
+            <img  onClick={toggleMenu} id="burger" src={burger} alt="burger"/>
+              <div className={`nav ${isOpen ? 'open' : ''}`}>
+              <img onClick={closeMenu} id="close" src={closeIcon} alt="x" />
+              <a href=""><img src={account} alt="Account"/></a>
+              <a href=""><img src={cart} alt="Cart"/></a>
               <Categories/>
-            </ul>
+              </div>
       </div>
     </header>
   );

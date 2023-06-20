@@ -1,13 +1,155 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
-$background-color:#6f2232;
+
 *{
     padding:0px;
     margin:0px;
     box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;
     list-style-type: none;
+    text-decoration: none;
 }
-header {
+.menu{
+    display:none;
+}
+.logo{
+    img{
+        width:170px;
+    }
+}
+.mobile-menu{
+    img{
+        width:100px;
+    }
+    #burger{
+        display:flex;
+        flex-direction: row;
+        float:right;
+        margin:-8.8rem 30px;
+    }
+    .nav{
+        background-color: black;
+        padding-top:100px;
+        /* Top,left,width,height and position is used to put it into fixed position */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* Puts it right so we can't see it */
+        transform: translateX(100%); 
+        transition: transform 0.3s ease;
+
+    &.open {
+        transform: translateX(0%);
+    }
+        #close{
+            display:block;
+            width:50px;
+            float:right;
+            margin:-30px 50px;
+        }
+        text-align: center;
+        img{
+            width:85px;
+            margin:6rem 0rem 20px 20px;
+        }
+        ul{
+            display:inline-block;
+            li{
+                margin:1.5rem 0px;
+                a{
+                    font-size:30px;
+                    color:white;
+                }
+            }
+        }
+    }
+}
+@media(min-width:1024px){
+    .mobile-menu{
+        display:none;
+    }
+    .menu{
+        margin-top:-10rem;
+        margin-right:5rem;
+        display:flex;
+        float:right;
+        li{
+            margin:1rem 1rem;
+        }
+        #categories{
+            margin-top:2.3rem;
+            margin-right:2rem;
+            a{
+                font-size:30px;
+                color:black;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+        img{
+            width:80px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -62,10 +204,17 @@ header {
             width:90px;
             margin:20px;
         }
+        ul{
+            transition: transform 0.3s ease-out;
+            transform: translateX(100%);
+        }
     }
   }
 
   @media (max-width: 1024px){
+    img{
+        width:40px;
+    }
   header{
     .menu{
         display:none;
@@ -74,6 +223,6 @@ header {
         display:block;
     }
   }
-  }
+  } */
     
   
