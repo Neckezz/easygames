@@ -32,30 +32,33 @@ const Header = () => {
   };
 
   return (
-    <header>
-      <div className="logo">
-        <a href=""><img src={logo} alt="EasyGames" id="logo" /></a>
-      </div>
-      
-      <ul className="menu">
-        <li id="categories"><a href="#" onClick={handleClick}>Categories</a></li>
-        <li><a href=""><img src={accountB} alt="Account" /></a></li>
-        <li><a href=""><img src={cartB} alt="Cart" /></a></li>
+      <header>
+        <div className="logo">
+          <img src={logo} alt="EasyGames" id="logo" />
+        </div>
         
-        <div className="categories" style={show}>
-        <Categories/>
-      </div>
-      </ul>
+        <ul className="menu">
+          
+        <div className="categories">
+          <li id="categories" onClick={handleClick}>Categories</li>
+          <div className="dropdown" style={show}>
+          <Categories/>
+          </div>
+        </div>
+
+          <li><a href=""><img src={accountB} alt="Account" /></a></li>
+          <li><a href=""><img src={cartB} alt="Cart" /></a></li>
+        </ul>
       
-      <div className="mobile-menu">
-            <img  onClick={toggleMenu} id="burger" src={burger} alt="burger"/>
+              <div className="mobilemenu">
+              <img  onClick={toggleMenu} id="burger" src={burger} alt="burger"/>
               <div className={`nav ${isOpen ? 'open' : ''}`}>
               <img onClick={closeMenu} id="close" src={closeIcon} alt="x" />
               <a href=""><img src={account} alt="Account"/></a>
               <a href=""><img src={cart} alt="Cart"/></a>
               <Categories/>
               </div>
-      </div>
+              </div>
     </header>
   );
 };
