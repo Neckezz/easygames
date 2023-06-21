@@ -6,6 +6,7 @@ const Categories = () => {
           <li><a href="">Xbox games</a></li>
           <li><a href="">Nintendo Switch</a></li>
           <li><a href="">PC Games</a></li>
+          <li><a href="">Consoles and PC</a></li>
         </nav>
      );
 }
