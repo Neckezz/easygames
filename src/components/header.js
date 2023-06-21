@@ -38,7 +38,7 @@ const Header = () => {
         </div>
         
         <ul className="menu">
-          
+
         <div className="categories">
           <li id="categories" onClick={handleClick}>Categories</li>
           <div className="dropdown" style={show}>
@@ -52,12 +52,14 @@ const Header = () => {
       
               <div className="mobilemenu">
               <img  onClick={toggleMenu} id="burger" src={burger} alt="burger"/>
+
               <div className={`nav ${isOpen ? 'open' : ''}`}>
               <img onClick={closeMenu} id="close" src={closeIcon} alt="x" />
               <a href=""><img src={account} alt="Account"/></a>
               <a href=""><img src={cart} alt="Cart"/></a>
               <Categories/>
               </div>
+              
               </div>
     </header>
   );
