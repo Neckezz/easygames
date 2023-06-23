@@ -1,6 +1,15 @@
-import PS5 from
-import XBOX from
-import SWITCH from
+import PS5 from"../images/dataimages/ps5.png";
+import XBOX from"../images/dataimages/xbox.png";
+import SWITCH from"../images/dataimages/switch.png";
+import PC from"../images/dataimages/pc.png";
+import Game1 from"../images/dataimages/f1.png";
+import Game2 from"../images/dataimages/spiderman2.png";
+import Game3 from"../images/dataimages/Hogwarts.png";
+import Game4 from"../images/dataimages/re4.png";
+import Game5 from"../images/dataimages/starwars.png";
+import Game6 from"../images/dataimages/zelda.png";
+import Game7 from"../images/dataimages/mario.png";
+
 export const product =[
     {
         id:1,
@@ -70,13 +79,13 @@ export const product =[
         title:"The Legend of Zelda: Tears of the Kingdom",
         price:"69.99$",
         description:"In this sequel to the Legend of Zelda: Breath of the Wild game, you'll decide your own path through the sprawling landscapes of Hyrule and the mysterious islands floating in the vast skies above.",
-        img: Game7
+        img: Game6
     },
     {
         id:11,
         title:"Super Mario Odyssey",
         price:"49.99$",
         description:"Super Mario Odyssey is a platform game in which players control Mario as he travels across many different worlds, known as within the game, on the hat-shaped ship Odyssey, to rescue Princess Peach from Bowser, who plans to forcibly marry her.",
-        img: Game8
+        img: Game7
     },
 ]
