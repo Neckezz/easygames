@@ -1,13 +1,26 @@
-import product from "../components/Database"
 import { useEffect,useState } from "react";
-
 const Preorder = () => {
-    useEffect(()=>{
 
-    })
-    return ( 
-        <h1>Hello World</h1>
-     );
+    const[product,setProduct]=useState([]);
+    useEffect(()=>{
+      fetch('http://localhost:8000/product')
+      .then(res=>{
+        return res.json();
+      })
+      .then(data=>{
+        console.log(data);
+        setProduct(data);
+      })
+    },[]);
+    return (
+      <div>
+      {product.map((product) => (
+        <div className="preorder" key={product.id}>
+          <h1>{product.title}</h1>
+        </div>
+      ))}
+    </div>
+    );
 }
  
 export default Preorder;
