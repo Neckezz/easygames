@@ -71,8 +71,8 @@ $hovered-color:#2f2f2f;
     }
     .products{
         text-align:center;
-        margin-top:50px;
-        h4{
+        margin-top:200px;
+        h3{
             margin:1rem 2rem;
         }
         nav{
@@ -80,9 +80,10 @@ $hovered-color:#2f2f2f;
             margin:0rem 2rem;
             li{
                 padding:1rem;
-                border-top:2px solid black;
-                border-left:2px solid black;
-                border-right:2px solid black;
+                border-top:1px solid black;
+                border-bottom:1px solid black;
+                border-left:1px solid black;
+                border-right:1px solid black;
             }
             a{
                 font-size:20px;
@@ -90,7 +91,7 @@ $hovered-color:#2f2f2f;
             }
         }
     }
-@media(min-width:724px){
+@media(min-width:1024px){
     #burger{
         display:none;
     }
@@ -135,6 +136,42 @@ $hovered-color:#2f2f2f;
             display:inline-flex;
             flex-direction: column;
             position: absolute;
+        }
+    }
+    .products{
+        .text{
+            margin:3rem 3rem;
+            text-align: left;
+            h1{
+                font-size:55px;
+            }
+            h3{
+            font-size:35px;
+            margin:0.5rem 0rem;
+            width:30%;
+            }
+        }
+        nav{
+            margin:-12rem 4rem;
+            width:40%;
+            float:right;
+            li{
+                padding:0.6rem;
+            }
+                :hover{
+                    background-color: $hovered-color;
+                    a{
+                        color:whitesmoke;
+                    }
+                }
+        }
+    }
+}
+/* Minor bug for product table */
+@media(min-width:1025px) and (max-width:1308px){
+    .products{
+        nav{
+            margin:-15rem 4rem;
         }
     }
 }
