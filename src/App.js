@@ -1,6 +1,6 @@
 import Header from './components/header'
 import NewArticles from './components/newarticles';
-import Preorder from './components/preorder';
+import Products from './components/products';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <Header />
       <NewArticles/>
-      <Preorder/>
+      <Products/>
     </div>
     </Router>
   );

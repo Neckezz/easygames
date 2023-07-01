@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
-$text-color:#2f2f2f;
+$deafult-color:#f99f20;
+$hovered-color:#2f2f2f;
 *{
     padding:0px;
     margin:0px;
@@ -66,6 +67,27 @@ $text-color:#2f2f2f;
             border-radius:15px;
             margin:5px 0px;
             width:100%;
+        }
+    }
+    .products{
+        text-align:center;
+        margin-top:50px;
+        h4{
+            margin:1rem 2rem;
+        }
+        nav{
+            background-color: #f99f20;
+            margin:0rem 2rem;
+            li{
+                padding:1rem;
+                border-top:2px solid black;
+                border-left:2px solid black;
+                border-right:2px solid black;
+            }
+            a{
+                font-size:20px;
+                color:black;
+            }
         }
     }
 @media(min-width:724px){
