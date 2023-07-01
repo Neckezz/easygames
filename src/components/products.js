@@ -8,9 +8,7 @@ const Products = () => {
             <h3>Experience gaming adventures for the lowest price in Serbia</h3>
             <Categories/>
             </div>
-            <div className="items">
                 <Fetch/>
-            </div>
         </div>
      );
 }
