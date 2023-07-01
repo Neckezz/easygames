@@ -39,13 +39,6 @@ const Header = () => {
         
         <ul className="menu">
 
-        <div className="categories">
-          <li id="categories" onClick={handleClick}>Categories</li>
-          <div className="dropdown" style={show}>
-          <Categories/>
-          </div>
-        </div>
-
           <li><a href=""><img src={accountB} alt="Account" /></a></li>
           <li><a href=""><img src={cartB} alt="Cart" /></a></li>
         </ul>
