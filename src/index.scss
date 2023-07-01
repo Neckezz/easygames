@@ -1,4 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@mixin customButton {
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 10px 15px;
+    background-color: $deafult-color;
+    color: $hovered-color;
+    font-size: 16px;
+    font-weight: bold;
+    border: 3px solid $deafult-color;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+    &:hover {
+      color: white;
+      background-color:black;
+      mix-blend-mode: screen;
+      border: 3px solid $deafult-color;
+      padding: 12px 17px;
+    }
+  }
 $deafult-color:#f99f20;
 $hovered-color:#2f2f2f;
 *{
@@ -71,7 +90,7 @@ $hovered-color:#2f2f2f;
     }
     .products{
         text-align:center;
-        margin-top:200px;
+        margin-top:100px;
         h3{
             margin:1rem 2rem;
         }
@@ -88,6 +107,23 @@ $hovered-color:#2f2f2f;
             a{
                 font-size:20px;
                 color:black;
+            }
+        }
+        .items{
+            background-color: grey;
+            display:flex;
+            flex-direction: column;
+            .item{
+                img{
+                    width:200px;
+                }
+                margin:0.5rem 5rem;
+                border:3px solid white;
+                border-radius: 20px;
+                background-color: white;
+                button{
+                    @include customButton();
+                }
             }
         }
     }
@@ -139,6 +175,7 @@ $hovered-color:#2f2f2f;
         }
     }
     .products{
+        margin-top:200px;
         .text{
             margin:3rem 3rem;
             text-align: left;
@@ -164,6 +201,10 @@ $hovered-color:#2f2f2f;
                         color:whitesmoke;
                     }
                 }
+        }
+        .items{
+            overflow-x:scroll;
+            flex-direction: row;
         }
     }
 }
