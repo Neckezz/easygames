@@ -1,5 +1,5 @@
 import { useEffect,useState } from "react";
-const Preorder = () => {
+const Fetch = () => {
 
     const[product,setProduct]=useState([]);
     useEffect(()=>{
@@ -23,4 +23,4 @@ const Preorder = () => {
     );
 }
  
-export default Preorder;
+export default Fetch;
