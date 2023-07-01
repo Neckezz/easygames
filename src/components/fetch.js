@@ -1,26 +1,33 @@
-import { useEffect,useState } from "react";
-const Fetch = () => {
+import { useEffect, useState } from "react";
 
-    const[product,setProduct]=useState([]);
-    useEffect(()=>{
-      fetch('http://localhost:8000/product')
-      .then(res=>{
-        return res.json();
-      })
-      .then(data=>{
+const Fetch = ({ productId }) => {
+  const [product, setProduct] = useState(null);
+
+  useEffect(() => {
+    fetch(`http://localhost:8000/product/${productId}`)
+      .then((res) => res.json())
+      .then((data) => {
         console.log(data);
         setProduct(data);
       })
-    },[]);
-    return (
-      <div>
-      {product.map((product) => (
-        <div className="preorder" key={product.id}>
+      .catch((error) => {
+        console.error("Error fetching product:", error);
+      });
+  }, [productId]);
+
+  return (
+    <div>
+      {product ? (
+        <div className="preorder">
           <h1>{product.title}</h1>
+          <p>{product.price}</p>
+          <p>{product.description}</p>
         </div>
-      ))}
+      ) : (
+        <p>Loading...</p>
+      )}
     </div>
-    );
-}
- 
+  );
+};
+
 export default Fetch;
