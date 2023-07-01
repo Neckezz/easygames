@@ -18,7 +18,7 @@ const Fetch = ({ productId }) => {
   return (
     <div>
       {product ? (
-        <div className="preorder">
+        <div className="item">
           <h1>{product.title}</h1>
           <p>{product.price}</p>
           <p>{product.description}</p>
