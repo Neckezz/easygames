@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 const FetchID = ({ productId }) => {
   const [product, setProduct] = useState(null);
+  const[Loading,setLoading]=useState(true);
 
   useEffect(() => {
     fetch(`http://localhost:8000/product/${productId}`)
@@ -9,6 +10,7 @@ const FetchID = ({ productId }) => {
       .then((data) => {
         console.log(data);
         setProduct(data);
+        setLoading(false);
       })
       .catch((error) => {
         console.error("Error fetching product:", error);
@@ -16,16 +18,15 @@ const FetchID = ({ productId }) => {
   }, [productId]);
 
   return (
-    <div>
-      {product ? (
-        <div className="item">
-          <h1>{product.title}</h1>
-          <p>{product.price}</p>
-          <p>{product.description}</p>
-        </div>
-      ) : (
-        <p>Loading...</p>
-      )}
+    <div className="items">
+      {Loading &&<div className="loading"><img src={loading} alt="loading..." /></div>}
+      {product && (
+      <div className="item">
+        <h1>{product.title}</h1>
+        <p>{product.price}</p>
+        <p>{product.description}</p>
+      </div>
+    )}
     </div>
   );
 };
