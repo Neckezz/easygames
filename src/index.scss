@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 @mixin customButton {
-    margin: 0 auto;
-    margin-top: 30px;
     padding: 10px 15px;
     background-color: $deafult-color;
     color: $hovered-color;
@@ -13,8 +11,7 @@
     &:hover {
       color: white;
       background-color:black;
-      mix-blend-mode: screen;
-      border: 3px solid $deafult-color;
+      border: 3px solid black;
       padding: 12px 17px;
     }
   }
@@ -84,45 +81,53 @@ $hovered-color:#2f2f2f;
     .news{
         img{
             border-radius:15px;
-            margin:5px 0px;
+            margin:30px 0px;
             width:100%;
         }
     }
     .products{
+        img{
+            width:200px;
+        }
         text-align:center;
-        margin-top:100px;
+        margin-top:150px;
         h3{
             margin:1rem 2rem;
         }
         nav{
-            background-color: #f99f20;
-            margin:0rem 2rem;
             li{
+                margin:0.5rem 0.3rem;
+                display:inline-flex;
+                border:0.5px solid black;
                 padding:1rem;
-                border-top:1px solid black;
-                border-bottom:1px solid black;
-                border-left:1px solid black;
-                border-right:1px solid black;
             }
             a{
-                font-size:20px;
+                font-size:13px;
+                font-weight: bold;
                 color:black;
             }
         }
         .items{
-            background-color: grey;
+            margin-top:1.5rem;
+            padding-top:1.2rem;
+            background-color: $hovered-color;
             display:flex;
             flex-direction: column;
             .item{
+                
+                box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
                 img{
-                    width:200px;
+                    width:180px;
                 }
-                margin:0.5rem 5rem;
+                padding-top:1rem;
+                margin:0.4rem 5rem;
                 border:3px solid white;
                 border-radius: 20px;
                 background-color: white;
                 button{
                     @include customButton();
+                    margin-top:-10px;
+                    margin-bottom:15px;
                 }
             }
         }
@@ -141,7 +146,6 @@ $hovered-color:#2f2f2f;
             font-size:16px;
         }
         nav{
-            box-shadow: 5px 5px 3px 2px rgba(0,0,0,0.2);
             a{
                 color:black;
             }
@@ -157,17 +161,23 @@ $hovered-color:#2f2f2f;
         }
         .banner{
             img{
-                width:90%;
+                width:80%;
             }
-            margin:0rem 1rem;
+            margin:0rem 1.2rem;
             display:inline-flex;
             flex-direction: column;
             position: absolute;
         }
     }
     .products{
-        margin-top:250px;
+        margin-top:280px;
         .text{
+            img{
+                float:Right;
+                width:550px;
+                margin-top:-11rem;
+                margin-right:10rem;
+            }
             margin:3rem 3rem;
             text-align: left;
             h1{
@@ -180,10 +190,8 @@ $hovered-color:#2f2f2f;
             }
         }
         nav{
-            margin:-12rem 4rem;
-            width:40%;
-            float:right;
             li{
+                margin-top:20px;
                 padding:0.6rem;
             }
                 :hover{
@@ -194,16 +202,19 @@ $hovered-color:#2f2f2f;
                 }
         }
         .items{
-            overflow-x:scroll;
+            margin-top:140px;
             flex-direction: row;
-        }
-    }
-}
-/* Minor bug for product table */
-@media(min-width:1025px) and (max-width:1308px){
-    .products{
-        nav{
-            margin:-15rem 4rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            .item{
+                position:relative;
+                height:350px;
+                h1{
+                    font-size: 20px;
+                }
+                flex-basis:25%;
+                margin:1rem 2rem;
+            }
         }
     }
 }
