@@ -18,10 +18,8 @@ const Fetch = () => {
         <div className="item" key={product.id}>
             <img src={product.img} alt={product.title} />
             <h1>{product.title}</h1>
-            <div className="inline">
             <h3>{product.price}</h3>
             <button>Purchase</button>
-            </div>
         </div>
       ))}
     </div>
