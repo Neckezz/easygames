@@ -88,7 +88,8 @@ $hovered-color:#2f2f2f;
     }
     .products{
         img{
-            width:200px;
+            margin-bottom:50px;
+            width:350px;
         }
         text-align:center;
         margin-top:150px;
@@ -196,6 +197,7 @@ $hovered-color:#2f2f2f;
                 width:550px;
                 margin-top:-11rem;
                 margin-right:10rem;
+                margin-bottom:-50px;
             }
             margin:3rem 3.5rem;
             text-align: left;
@@ -231,7 +233,7 @@ $hovered-color:#2f2f2f;
                 h1{
                     font-size: 20px;
                 }
-                flex-basis:30%;
+                flex-basis:25%;
                 margin:1rem 2rem;
             }
         }
