@@ -24,7 +24,7 @@ const Fetch = () => {
             <img src={product.img} alt={product.title} />
             <h1>{product.title}</h1>
             <h3>{product.price}</h3>
-            <button>Purchase</button>
+            <button>PURCHASE 🛒</button>
         </div>
       ))}
     </div>
