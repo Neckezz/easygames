@@ -149,6 +149,69 @@ $hovered-color:#2f2f2f;
             }
         }
     }
+    .footer{
+        bottom:0;
+        background-color: $hovered-color;
+        .newsletter{
+            padding-bottom: 15px;
+            text-align: center;
+            input{
+                padding:0.5rem 2rem;
+                border-radius: 10px;
+                border:2px solid white;
+                margin:0.5rem;
+                color:grey;
+                letter-spacing: 1.5px;
+            }
+            button{
+                color:whitesmoke;
+                background-color: $deafult-color;
+                border:3px solid $deafult-color;
+                border-radius: 10px;
+                padding:0.3rem;
+            }
+            h1{
+                color:whitesmoke;
+                font-size:25px;
+                padding:1rem;
+            }
+            border-bottom:2px solid whitesmoke;
+        }
+        .information{
+            color:whitesmoke;
+            text-align: center;
+            li{
+                margin:10px 0px;
+            }
+            .locations{
+                    h3{
+                        color:$deafult-color;
+                        font-size: 30px;
+                    }
+
+            }
+            .support{
+                h3{
+                    color:$deafult-color;
+                    font-size: 25px;
+                }
+            }
+        }
+        .partners{
+            text-align: center;
+            img{
+                margin:0.1rem;
+                width:150px;
+            }
+        }
+        .trademark{
+            background-color: black;
+            padding:0.8rem;
+            color:whitesmoke;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+    }
 @media(min-width:1024px){
     #burger{
         display:none;
@@ -228,14 +291,62 @@ $hovered-color:#2f2f2f;
             flex-wrap: wrap;
             justify-content: center;
             .item{
-                position:relative;
                 
                 h1{
                     font-size: 20px;
                 }
-                flex-basis:25%;
+                flex-basis:23%;
                 margin:1rem 2rem;
             }
         }
     }
+    .footer{
+        .newsletter{
+            
+            h1{
+                font-size:30px;
+            }
+            input{
+                padding:0.7rem 4rem;
+            }
+            button{
+                padding:0.6rem;
+                transition:0.4s;
+                &:hover{
+                    background-color: black;
+                    border:3px solid black;
+                    padding:0.7rem;
+                }
+            }
+        }
+        .information{
+            display:flex;
+            justify-content: center;
+            margin:20px 0px;
+            ul{
+                margin:0px 200px;
+            }
+            .locations{
+                h3{
+                    font-size: 70px;
+                }
+                li{
+                    margin:20px 0px;
+                }
+            }
+            .support{
+                h3{
+                    font-size: 40px;
+                }
+                li{
+                    margin:20px 0px;
+                }
+            }
+        }
+       .partners{
+        img{
+            width: 350px;
+        }
+       }
+}
 }
