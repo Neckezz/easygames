@@ -260,6 +260,29 @@ $hovered-color:#2f2f2f;
             text-align: center;
         }
     }
+    .page404{
+        /* For some reason it doesnt want to center when i use grid and place items, so I used OG solution */
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        h1{
+            font-size:8rem;
+        }
+        h3{
+            font-size:3rem;
+        }
+        p{
+            margin:0.5rem 0rem;
+            font-size:1rem;
+        }
+        button{
+            margin-top:1rem;
+            font-size:2rem;
+            @include normalButton();
+        }
+    }
 @media(min-width:1024px){
     #burger{
         display:none;
