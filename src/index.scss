@@ -16,6 +16,19 @@
       border: 3px solid black;
     }
   }
+  @mixin normalButton{
+    color:whitesmoke;
+    background-color: $deafult-color;
+    border:3px solid $deafult-color;
+    border-radius: 10px;
+    padding:0.3rem;
+    transition: 0.4s;
+    &:hover{
+        background-color: black;
+        border:3px solid black;
+        padding:0.6rem;
+    }
+  }
 $deafult-color:#f99f20;
 $hovered-color:#2f2f2f;
 *{
@@ -90,7 +103,6 @@ $hovered-color:#2f2f2f;
         }
     }
     .products{
-        
         img{
             margin-bottom:50px;
             width:350px;
@@ -153,6 +165,42 @@ $hovered-color:#2f2f2f;
             }
         }
     }
+    .refund{
+        margin:50px 40px;
+        .image{
+            text-align: center;
+            margin-bottom:30px;
+            img{
+                margin-left:2rem;
+                width:200px;
+                
+            }
+        }
+        h1{
+            color: $deafult-color;
+            font-size:25px;
+            text-align: center;
+        }
+        h3{
+            color: $deafult-color;
+            font-size:20px;
+        }
+        p{
+            margin-top:15px;
+            margin-bottom:10px;
+            color:$hovered-color;
+        }
+        ul{
+            li{
+                display:list-item;
+                list-style-position:outside;
+                list-style: disc;
+            }
+        }
+        button{
+                @include normalButton();
+        }
+    }
     .footer{
         bottom:0;
         background-color: $hovered-color;
@@ -168,11 +216,7 @@ $hovered-color:#2f2f2f;
                 letter-spacing: 1.5px;
             }
             button{
-                color:whitesmoke;
-                background-color: $deafult-color;
-                border:3px solid $deafult-color;
-                border-radius: 10px;
-                padding:0.3rem;
+                @include normalButton();
             }
             h1{
                 color:whitesmoke;
@@ -305,9 +349,30 @@ $hovered-color:#2f2f2f;
             }
         }
     }
+    .refund{
+        h1{
+            font-size:50px;
+            text-align: left;
+        }
+        h3{
+            font-size:30px;
+        }
+        p,li{
+            font-size: 20px;
+        }
+        button{
+            font-size:20px;
+        }
+        .image{
+            margin-right:5rem;
+            img{
+                width:300px;
+            }
+            float:right;
+        }
+    }
     .footer{
-        .newsletter{
-            
+        .newsletter{    
             h1{
                 font-size:30px;
             }
@@ -317,11 +382,7 @@ $hovered-color:#2f2f2f;
             button{
                 padding:0.6rem;
                 transition:0.4s;
-                &:hover{
-                    background-color: black;
-                    border:3px solid black;
-                    padding:0.7rem;
-                }
+                
             }
         }
         .information{
