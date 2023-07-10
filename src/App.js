@@ -1,18 +1,12 @@
-import Header from './components/header'
-import NewArticles from './components/newarticles';
-import Products from './components/products';
-import Footer from './components/footer'
-import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import Refundpolicy from './components/refundpolicy';
+import {Routes,Route} from "react-router-dom";
+import Homepage from "./pages/Homepage";
 function App() {
   return (
-    <Router>
-      <Header />
-      <NewArticles/>
-      <Products/>
-      <Refundpolicy/>
-      <Footer/>
-    </Router>
+    <Routes>
+      <Route path="/" element={<Homepage/>}/>
+      <Route path="/createaccount"/>
+      <Route path="/cart"/>
+    </Routes>
   );
 }
 
