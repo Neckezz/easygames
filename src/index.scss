@@ -127,7 +127,8 @@ $hovered-color:#2f2f2f;
         }
         .items{
             margin-top:1.5rem;
-            padding-top:1.2rem;
+            padding-top:2rem;
+            padding-bottom:2rem;
             background-color: $hovered-color;
             display:flex;
             flex-direction: column;
@@ -310,7 +311,8 @@ $hovered-color:#2f2f2f;
         }
     }
     .news{
-        padding-bottom:150px;
+        padding-top:100px;
+        
         img{
             margin:30px 15px;
         }
@@ -331,6 +333,7 @@ $hovered-color:#2f2f2f;
     .products{
         margin-top:280px;
         .text{
+            padding-bottom:80px;
             img{
                 float:Right;
                 width:550px;
@@ -377,7 +380,7 @@ $hovered-color:#2f2f2f;
         }
     }
     .refund{
-        margin:130px 60px;
+        margin:200px 60px;
         h1{
             font-size:50px;
             text-align: left;
@@ -395,7 +398,7 @@ $hovered-color:#2f2f2f;
         .image{
             margin-right:5rem;
             img{
-                width:300px;
+                width:350px;
             }
             float:right;
         }
