@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import loading from "../images/loading.gif"
 
 const FetchID = ({ productId }) => {
   const [product, setProduct] = useState(null);
