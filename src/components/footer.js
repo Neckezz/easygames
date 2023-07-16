@@ -1,13 +1,26 @@
+import { useState } from "react";
 import paypal from "../images/paypal.png"
 import paysafe from "../images/paysafe.png"
 import visa from "../images/visa.png"
 const Footer = () => {
+    const[toggle,setToggle]=useState(false);
+    const checkMail=()=>{
+        let mail=document.querySelector('input').value;
+        let regex=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        if (regex.test(mail))
+            {
+                alert('Email valid.Check your email')
+            }
+            else{
+                alert('Email invalid');
+            }
+    }
     return ( 
         <div className="footer">
             <div className="newsletter">
                 <h1>Subscribe to our Newsletter:</h1>
                 <input defaultValue={"example@gmail.com"} type="text" />
-                <button>Sumbit</button>
+                <button onClick={checkMail}>Sumbit</button>
             </div>
             <div className="information">
                 <div className="locations">
