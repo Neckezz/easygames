@@ -4,9 +4,7 @@ const ProductPage = () => {
     const { id } = useParams();
   
     return (
-      <div>
         <FetchID productId={id} />
-      </div>
     );
   };
   
