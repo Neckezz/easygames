@@ -1,9 +1,10 @@
 import { useEffect,useState } from "react";
+import { Link} from "react-router-dom";
 import loading from "../images/loading.gif"
 const Fetch = () => {
-
     const[product,setProduct]=useState([]);
     const[Loading,setLoading]=useState(true);
+
     useEffect(()=>{
       fetch('http://localhost:8000/product')
       .then(res=>{
@@ -15,16 +16,22 @@ const Fetch = () => {
         setLoading(false);
       })
     },[]);
+
+    
     return (
       <div className="items">
-
       {Loading &&<div className="loading"><img src={loading} alt="loading..." /></div>}
       {product.map((product) => (
         <div className="item" key={product.id}>
             <img src={product.img} alt={product.title} />
             <h1>{product.title}</h1>
             <h3>{product.price}</h3>
-            <button>PURCHASE 🛒</button>
+            <Link to={`/products/${product.id}`}>
+            <button>
+              PURCHASE 🛒
+            </button>
+            </Link>
+
         </div>
       ))}
     </div>
