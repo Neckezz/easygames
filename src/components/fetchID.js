@@ -19,10 +19,10 @@ const FetchID = ({ productId }) => {
   }, [productId]);
 
   return (
-    <div className="items">
+    <div className="product">
       {Loading &&<div className="loading"><img src={loading} alt="loading..." /></div>}
       {product && (
-      <div className="item" key={product.id}>
+      <div className={product.id} key={product.id}>
         <h1>{product.title}</h1>
         <p>{product.price}</p>
         <p>{product.description}</p>
