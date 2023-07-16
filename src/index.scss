@@ -311,27 +311,23 @@ $hovered-color:#2f2f2f;
         }
     }
     .news{
-        padding-top:100px;
-        
+        .swiper{
+            width: 65%;
+            float:left;
+            margin-right:100px;
+        }
+        padding: 150px 30px 250px;
         img{
             margin:30px 15px;
         }
-        margin:6rem 2rem;
-        #pc{
-            width:65%;
-        }
         .banner{
-            img{
-                width:80%;
-            }
-            margin:0rem 0.6rem;
-            display:inline-flex;
+            display:flex;
             flex-direction: column;
-            position: absolute;
+            margin:1rem 5rem;
         }
     }
     .products{
-        margin-top:280px;
+        margin-top:100px;
         .text{
             padding-bottom:80px;
             img{
