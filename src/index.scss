@@ -49,6 +49,7 @@ $hovered-color:#2f2f2f;
 }
 .logo{
     img{
+        margin-left:1rem;
         width:170px;
     }
 }
@@ -60,6 +61,7 @@ $hovered-color:#2f2f2f;
         margin:-8.8rem 30px;
     }
     .nav{
+        z-index:100;
         background-color: black;
         padding-top:100px;
         /* Top,left,width,height and position is used to put it into fixed position */
@@ -295,7 +297,7 @@ $hovered-color:#2f2f2f;
     }
     .menu{
         margin-top:-8.9rem;
-        margin-right:5rem;
+        margin-right:3rem;
         display:flex;
         float:right;
         li{
@@ -306,9 +308,6 @@ $hovered-color:#2f2f2f;
             a{
                 color:black;
             }
-        }
-        img{
-            width:70px;
         }
     }
     .news{
