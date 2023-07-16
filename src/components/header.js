@@ -6,7 +6,8 @@ import logo from '../images/logo.png';
 import burger from '../images/burger.png';
 import Categories from './categories';
 import closeIcon from '../images/x.png';
-import React, { useState } from 'react';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
 
@@ -22,13 +23,13 @@ const Header = () => {
   return (
       <header>
                 <div className="logo">
-                  <img src={logo} alt="EasyGames" id="logo" />
+                  <Link to={'/'}><img src={logo} alt="EasyGames" id="logo" /></Link>
                 </div>
           
                 <ul className="menu">
 
-                  <li><a href=""><img src={accountB} alt="Account" /></a></li>
-                  <li><a href=""><img src={cartB} alt="Cart" /></a></li>
+                  <li><Link to={'/createaccount'}><img src={accountB} alt="Account" /></Link></li>
+                  <li><Link to={'/cart'}><img src={cartB} alt="Cart" /></Link></li>
                 </ul>
         
                 <div className="mobilemenu">

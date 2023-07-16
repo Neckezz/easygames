@@ -3,7 +3,7 @@ import baner2 from '../images/baner2.png';
 import carousel from '../images/carousel.png';
 import carousel2 from '../images/carousel2.png';
 import carousel3 from '../images/carousel3.png';
-
+import { Link } from 'react-router-dom';
 
 import { Navigation, Pagination, A11y, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -23,13 +23,13 @@ const NewArticles = () => {
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log('slide change')}
     >
-        <SwiperSlide><img src={carousel} alt="" /></SwiperSlide>
-        <SwiperSlide><img src={carousel2} alt="" /></SwiperSlide>
-        <SwiperSlide><img src={carousel3} alt="" /></SwiperSlide>
+        <SwiperSlide><Link to={'products/3'}><img src={carousel} alt="" /></Link></SwiperSlide>
+        <SwiperSlide><Link to={'products/4'}><img src={carousel2} alt="" /></Link></SwiperSlide>
+        <SwiperSlide><Link to={'products/1'}><img src={carousel3} alt="" /></Link></SwiperSlide>
     </Swiper>
     <div className="banner">
-            <a href=""><img src={baner1} alt="baner1" /></a>
-            <a href=""><img src={baner2} alt="baner2" /></a>
+            <Link to={'products/5'}><img src={baner1} alt="baner1" /></Link>
+            <Link to={'products/6'}><img src={baner2} alt="baner2" /></Link>
             </div>
     </div>
      );
