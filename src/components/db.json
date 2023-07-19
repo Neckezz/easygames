@@ -5,35 +5,35 @@
         "title": "Playstation 5",
         "price": "600$",
         "description": "PlayStation 5 konzola sa dodatnim DualSense Wireless kontrolerom. Divite se neverovatnoj grafici i doživite potpuno nove funkcije koje donosi PS5 konzola!",
-        "img": "dataimages/ps5.png"
+        "img": "/dataimages/ps5.png"
       },
       {
         "id": 2,
         "title": "Xbox series one",
         "price": "650$",
         "description": "Osetite next-gen brzinu i performanse koje omogućava Xbox Veloctiy Architetcture, koja uparuje prilagođeni SSD sa integrisanim softverom za još bržu igru i učitavanje. Jednostvano se prebacite na drugu igru uz pomoć Quick Resume opcije.",
-        "img": "dataimages/xbox.png"
+        "img": "/dataimages/xbox.png"
       },
       {
         "id": 3,
         "title": "Nintendo Switch",
         "price": "500$",
         "description": "Feast your eyes on vivid colors and crisp contrast when you play on-the-go.See the difference the vibrant screen makes, whether you're racing at top speed or squaring off against enemies.",
-        "img": "dataimages/switch.png"
+        "img": "/dataimages/switch.png"
       },
       {
         "id": 4,
         "title": "Modern PC",
         "price": "1500$",
         "description": "System: Intel Core i5 up to 3.7GHz 4-Core | 16GB Memory | 512GB Solid State Drive | Genuine Windows 10 Home 64-bitGraphics: AMD Radeon RX 550 4G GDDR5 Video Card | 1x HDMI | 1x DisplayPort | 1x DVIConnectivity: RGB Fan x 3 | 1x RJ-45 | 1x Serial | USB Wi-Fi | USB Bluetooth 5.0Special feature: RGB Gaming Mouse & Keyboard | RGB Mouse Pad1 Year parts & labor | Free lifetime tech support",
-        "img": "dataimages/pc.png"
+        "img": "/dataimages/pc.png"
       },
       {
         "id": 5,
         "title": "F1 2023",
         "price": "69.99$",
         "description": "Be the last to brake in EA SPORTS™ F1® 23, the official video game of the 2023 FIA Formula One World Championship™.",
-        "img": "dataimages/f1.png"
+        "img": "/dataimages/f1.png"
       },
       {
         "id": 6,
@@ -47,14 +47,14 @@
         "title": "Hogwarts Legacy",
         "price": "59.99$",
         "description": "Hogwarts Legacy is an immersive, open-world action RPG set in the world first introduced in the Harry Potter books. Now you can take control of the action and be at the center of your own adventure in the wizarding world. Your legacy is what you make of it. Live the Unwritten.",
-        "img": "dataimages/Hogwarts.png"
+        "img": "/dataimages/Hogwarts.png"
       },
       {
         "id": 8,
         "title": "Resident Evil 4 Remake",
         "price": "59.99$",
         "description": "Survival is just the beginning. Six years have passed since the biological disaster in Raccoon City. Leon S. Kennedy, one of the survivors, tracks the president's kidnapped daughter to a secluded European village, where there is something terribly wrong with the locals. ",
-        "img": "dataimages/re4.png"
+        "img": "/dataimages/re4.png"
       },
       {
         "id": 9,
@@ -68,21 +68,21 @@
         "title": "The Legend of Zelda: Tears of the Kingdom",
         "price": "69.99$",
         "description": "In this sequel to the Legend of Zelda: Breath of the Wild game, you'll decide your own path through the sprawling landscapes of Hyrule and the mysterious islands floating in the vast skies above.",
-        "img": "dataimages/zelda.png"
+        "img": "/dataimages/zelda.png"
       },
       {
         "id": 11,
         "title": "STAR WARS Jedi: Survivor™",
         "price": "69.99$",
         "description": "The story of Cal Kestis continues in STAR WARS Jedi: Survivor™, a galaxy-spanning, third-person, action-adventure game.",
-        "img": "dataimages/starwars.png"
+        "img": "/dataimages/starwars.png"
       },
       {
         "id": 12,
         "title": "Red Dead Redemption 2",
         "price": "59.99$",
         "description": "Od kreatora Grand Theft Auto V i Red Dead Redemption - Red Dead Redemption 2 je epska priča o životu u Americi pred početak modernog doba.",
-        "img": "dataimages/rdr2.png"
+        "img": "/dataimages/rdr2.png"
       }
     ]
   }
