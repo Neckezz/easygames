@@ -24,9 +24,15 @@ const FetchID = ({ productId }) => {
       {product && (
       <div className="product" key={product.id}>
         <h1>{product.title}</h1>
+        <img src={product.img} alt={product.id} />
         <p>{product.price}</p>
         <p>{product.description}</p>
-        <img src={product.img} alt={product.id} />
+        <div className="quantity">
+          <button>+</button>
+          <button>1</button>
+          <button>-</button>
+          <button>Add to cart</button>
+        </div>
       </div>
     )}
     </div>
