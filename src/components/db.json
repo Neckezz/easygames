@@ -40,7 +40,7 @@
         "title": "Spiderman2",
         "price": "69.99$",
         "description": "Swing, jump and utilize the new Web Wings to travel across Marvel’s New York, quickly switching between Peter Parker and Miles Morales to experience different stories and epic new powers, as the iconic villain Venom threatens to destroy their lives, their city and the ones they love.",
-        "img": "dataimages/spiderman2.png"
+        "img": "/dataimages/spiderman2.png"
       },
       {
         "id": 7,
@@ -61,7 +61,7 @@
         "title": "Super Mario Odyssey",
         "price": "49.99$",
         "description": "Super Mario Odyssey is a platform game in which players control Mario as he travels across many different worlds, known as within the game, on the hat-shaped ship Odyssey, to rescue Princess Peach from Bowser, who plans to forcibly marry her.",
-        "img": "dataimages/mario.png"
+        "img": "/dataimages/mario.png"
       },
       {
         "id": 10,
