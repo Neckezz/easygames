@@ -54,7 +54,7 @@ $hovered-color:#2f2f2f;
     }
 }
     #burger{
-        width:30%;
+        width:8rem;
         display:flex;
         flex-direction: row;
         float:right;
@@ -292,7 +292,40 @@ $hovered-color:#2f2f2f;
             @include normalButton();
         }
     }
-@media(min-width:1200px){
+    .product{
+        h1{
+            margin-bottom:80px;
+            font-size:45px;
+        }
+        text-align: center;
+        margin:10px 25px;
+        img{
+            width:400px;
+        }
+        .right{
+            #description{
+                margin-left:10px;
+                margin-right:10px;
+                margin-bottom:10px;
+            }
+            .quantity{
+                #cart{
+                    margin-left:20px;
+                    @include normalButton();
+                }
+                button{
+                    padding:15px;
+                    font-weight: bold;
+                    border:1.5px solid black;
+                }
+                p{
+                    font-size:30px;
+                    margin:30px 0px;
+                }
+            }
+        }
+    }
+@media(min-width:1000px){
     #burger{
         display:none;
     }
@@ -312,7 +345,7 @@ $hovered-color:#2f2f2f;
         }
     }
     .news{
-        margin-top:50px;
+        margin-top:10px;
         .swiper{
             
             width: 65%;
@@ -446,4 +479,17 @@ $hovered-color:#2f2f2f;
         }
        }
 }
+.right{
+    #description{
+        padding:15px 500px;
+    }
+}
+}
+/* Small bug at product page */
+@media (max-width:1300px){
+    .right{
+        #description{
+            padding:0px 100px;
+        }
+    }
 }
