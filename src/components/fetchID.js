@@ -25,14 +25,19 @@ const FetchID = ({ productId }) => {
       <div className="product" key={product.id}>
         <h1>{product.title}</h1>
         <img src={product.img} alt={product.id} />
+
+        <div className="right">
         <p id="description">{product.description}</p>
+
         <div className="quantity">
           <button>+</button>
           <button>1</button>
           <button>-</button>
           <button id="cart">Add to cart</button>
+
+          <p>{product.price}</p> 
           </div>
-          <p>{product.price}</p>
+        </div>
       </div>
     )}
     </div>
