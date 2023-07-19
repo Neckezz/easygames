@@ -18,7 +18,6 @@ const Refundpolicy = () => {
             <p>
             Please contact our tehnical support if you need a refund.
             </p>
-            <button>Start shopping</button>
         </div>
      );
 }
