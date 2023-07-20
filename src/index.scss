@@ -293,38 +293,36 @@ $hovered-color:#2f2f2f;
         }
     }
     .product{
-        h1{
-            margin-bottom:80px;
-            font-size:45px;
-        }
         text-align: center;
-        margin:10px 25px;
+        margin-bottom:150px;
+        h1{
+            font-size:50px;
+            margin:55px 0px;
+        }
         img{
             width:400px;
+            margin-bottom:50px;
         }
-        .right{
-            #description{
-                margin-left:10px;
-                margin-right:10px;
-                margin-bottom:10px;
-            }
-            .quantity{
-                #cart{
-                    margin-left:20px;
-                    @include normalButton();
-                }
-                button{
-                    padding:15px;
-                    font-weight: bold;
-                    border:1.5px solid black;
-                }
-                p{
-                    font-size:30px;
-                    margin:30px 0px;
-                }
+        #description{
+            max-width: 500px;
+            margin:0 auto;
+            padding-bottom:30px;
+            
+        }
+        #cart{
+            @include normalButton();
+            margin-left:20px;
+        }
+        button{
+            margin-top:20px;
+            padding:15px;
+            border:1.5px solid black;
+            &:hover{
+                background-color: black;
+                color:White;
             }
         }
-    }
+    }   
 @media(min-width:1000px){
     #burger{
         display:none;
@@ -479,17 +477,15 @@ $hovered-color:#2f2f2f;
         }
        }
 }
-.right{
+.product{
+    .flex{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
     #description{
-        padding:15px 500px;
+        max-width: 400px; /* Set a maximum width for the paragraph */
+        margin:auto; /* Center the paragraph horizontally */
     }
 }
-}
-/* Small bug at product page */
-@media (max-width:1300px){
-    .right{
-        #description{
-            padding:0px 100px;
-        }
-    }
 }
