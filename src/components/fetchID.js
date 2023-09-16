@@ -44,7 +44,7 @@ const FetchID = ({ productId }) => {
 
             <div className="right">
               <p id="description">{product.description}</p>
-              <h3 id="price">{product.price * value}$</h3>
+              <h3 id="price">{Math.round(product.price * value)}$</h3>
               <button onClick={increment}>+</button>
               <button>{value}</button>
               <button onClick={decrement}>-</button>
