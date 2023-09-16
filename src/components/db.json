@@ -51,31 +51,31 @@
       },
       {
         "id": 8,
-        "title": "Resident Evil 4 Remake",
-        "price": "59.99$",
-        "description": "Survival is just the beginning. Six years have passed since the biological disaster in Raccoon City. Leon S. Kennedy, one of the survivors, tracks the president's kidnapped daughter to a secluded European village, where there is something terribly wrong with the locals. ",
-        "img": "/dataimages/re4.png"
-      },
-      {
-        "id": 9,
         "title": "Super Mario Odyssey",
         "price": "49.99$",
         "description": "Super Mario Odyssey is a platform game in which players control Mario as he travels across many different worlds, known as within the game, on the hat-shaped ship Odyssey, to rescue Princess Peach from Bowser, who plans to forcibly marry her.",
         "img": "/dataimages/mario.png"
       },
       {
-        "id": 10,
+        "id": 9,
         "title": "The Legend of Zelda: Tears of the Kingdom",
         "price": "69.99$",
         "description": "In this sequel to the Legend of Zelda: Breath of the Wild game, you'll decide your own path through the sprawling landscapes of Hyrule and the mysterious islands floating in the vast skies above.",
         "img": "/dataimages/zelda.png"
       },
       {
-        "id": 11,
+        "id": 10,
         "title": "STAR WARS Jedi: Survivor™",
         "price": "69.99$",
         "description": "The story of Cal Kestis continues in STAR WARS Jedi: Survivor™, a galaxy-spanning, third-person, action-adventure game.",
         "img": "/dataimages/starwars.png"
+      },
+      {
+        "id": 11,
+        "title": "Resident Evil 4 Remake",
+        "price": "59.99$",
+        "description": "Survival is just the beginning. Six years have passed since the biological disaster in Raccoon City. Leon S. Kennedy, one of the survivors, tracks the president's kidnapped daughter to a secluded European village, where there is something terribly wrong with the locals. ",
+        "img": "/dataimages/re4.png"
       },
       {
         "id": 12,

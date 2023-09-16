@@ -136,6 +136,9 @@ $hovered-color:#2f2f2f;
             display:flex;
             flex-direction: column;
             .item{
+                .id{
+                    display:none;
+                }
                 box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
                 img{
                     width:180px;
@@ -302,11 +305,13 @@ $hovered-color:#2f2f2f;
         img{
             width:400px;
             margin-bottom:50px;
+            padding:20px;
         }
         #description{
             max-width: 500px;
             margin:0 auto;
             padding-bottom:30px;
+            font-size:20px;
             
         }
         #cart{

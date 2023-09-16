@@ -4,7 +4,6 @@ import loading from "../images/loading.gif"
 const Fetch = () => {
     const[product,setProduct]=useState([]);
     const[Loading,setLoading]=useState(true);
-
     useEffect(()=>{
       fetch('http://localhost:8000/product')
       .then(res=>{
@@ -23,6 +22,7 @@ const Fetch = () => {
       {Loading &&<div className="loading"><img src={loading} alt="loading..." /></div>}
       {product.map((product) => (
         <div className="item" key={product.id}>
+            <p className="id">ID:{product.id}</p>
             <img src={product.img} alt={product.title} />
             <h1>{product.title}</h1>
             <h3>{product.price}</h3>

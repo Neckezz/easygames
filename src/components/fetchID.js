@@ -18,13 +18,21 @@ const FetchID = ({ productId }) => {
       });
   }, [productId]);
 
-  /* const increment = () => {
+   const increment = () => {
+    let element = document.getElementById("value");
+    let currentValue = parseInt(element.innerHTML);
+    currentValue++;
+    element.innerHTML = currentValue.toString();
   };
   
   const decrement = () => {
-    if (count > 1) {
-    }
-  }; */
+      let element = document.getElementById("value");
+      let currentValue = parseInt(element.innerHTML);
+      if (currentValue > 1) {
+      currentValue--;
+      element.innerHTML = currentValue.toString();
+      }
+  };
 
   return (
     <div>
@@ -38,9 +46,9 @@ const FetchID = ({ productId }) => {
           <div className="right">
             <p id="description">{product.description}</p>
             <h3>{product.price}</h3>
-              <button>+</button>
-              <button>1</button>
-              <button>-</button>
+              <button onClick={increment}>+</button>
+              <button id="value">1</button>
+              <button onClick={decrement}>-</button>
               <button id="cart">Add to cart</button>
           </div>
           </div>
