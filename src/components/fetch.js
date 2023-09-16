@@ -25,7 +25,7 @@ const Fetch = () => {
             <p className="id">ID:{product.id}</p>
             <img src={product.img} alt={product.title} />
             <h1>{product.title}</h1>
-            <h3>{product.price}</h3>
+            <h3>{product.price}$</h3>
             <Link to={`/products/${product.id}`}>
             <button>
               PURCHASE 🛒
