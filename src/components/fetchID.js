@@ -5,6 +5,7 @@ const FetchID = ({ productId }) => {
   const [product, setProduct] = useState(null);
   const [loadingProduct, setLoadingProduct] = useState(true);
   const [value, setValue] = useState(1);
+  const [open,setOpen]=useState(false);
 
   useEffect(() => {
     fetch(`http://localhost:8000/product/${productId}`)
@@ -29,8 +30,20 @@ const FetchID = ({ productId }) => {
     }
   };
 
+  const popupOn=()=>{
+    setOpen(!open)
+  }
   return (
     <div>
+      {open && (
+          <div className="added">
+            <h3>Your product has been added to the cart</h3>
+            <div className="buttons">
+            <button onClick={popupOn}>Close</button>
+            <button>Go to cart</button>
+            </div>
+        </div>
+      )}
       {loadingProduct && (
         <div className="loading">
           <img src={loading} alt="loading..." />
@@ -48,7 +61,7 @@ const FetchID = ({ productId }) => {
               <button onClick={increment}>+</button>
               <button>{value}</button>
               <button onClick={decrement}>-</button>
-              <button id="cart">Add to cart</button>
+              <button onClick={popupOn} id="cart">Add to cart</button>
             </div>
           </div>
         </div>
