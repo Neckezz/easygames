@@ -163,9 +163,8 @@ $hovered-color:#2f2f2f;
                 left: 0;
                 width: 100vw;
                 height: 100vh;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                display: grid;
+                place-items: center;
                 img{
                     width:600px;
                 }
@@ -347,10 +346,35 @@ $hovered-color:#2f2f2f;
             display:flex;
             flex-direction: row;
             button{
-                margin:15px;
+                margin:10px;
                 @include normalButton();
             }
         }
+    }
+    .login{
+        width:500px;
+        margin:auto;
+        display:grid;
+        place-items: center;
+        .special{
+            margin-bottom:20px;
+        }
+        .form{
+            input{
+                padding:7.5px;
+                border-radius:8px;
+                color:grey;
+            }
+            input,h5{
+                margin:13px 0px
+            }
+        }
+        button{
+            margin:10px;
+            @include normalButton();
+        }
+        margin-top:120px;
+        margin-bottom:200px;
     }   
 @media(min-width:1000px){
     #burger{

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import  {Link} from 'react-router-dom';
 import loading from "../images/loading.gif";
 
 const FetchID = ({ productId }) => {
@@ -40,7 +41,7 @@ const FetchID = ({ productId }) => {
             <h3>Your product has been added to the cart</h3>
             <div className="buttons">
             <button onClick={popupOn}>Close</button>
-            <button>Go to cart</button>
+            <Link to={'/cart'}><button>Go to cart</button></Link>
             </div>
         </div>
       )}
