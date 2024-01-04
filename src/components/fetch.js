@@ -22,7 +22,6 @@ const Fetch = () => {
       {Loading &&<div className="loading"><img src={loading} alt="loading..." /></div>}
       {product.map((product) => (
         <div className="item" key={product.id}>
-            <p className="id">ID:{product.id}</p>
             <img src={product.img} alt={product.title} />
             <h1>{product.title}</h1>
             <h3>{product.price}$</h3>
@@ -31,7 +30,6 @@ const Fetch = () => {
               PURCHASE 🛒
             </button>
             </Link>
-
         </div>
       ))}
     </div>
