@@ -29,7 +29,9 @@ const Header = () => {
                 <ul className="menu">
 
                   <li><Link to={'/register'}><img src={accountB} alt="Account" /></Link></li>
-                  <li><Link to={'/cart'}><img src={cartB} alt="Cart" /></Link></li>
+                  <li className='value'><Link to={'/cart'}><img id='cart' src={cartB} alt="Cart" /></Link>
+                  </li>
+                  <li><p id='value'>0</p></li>
                 </ul>
         
                 <div className="mobilemenu">

@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import  {Link} from 'react-router-dom';
 import loading from "../images/loading.gif";
-
 const FetchID = ({ productId }) => {
   const [product, setProduct] = useState(null);
   const [loadingProduct, setLoadingProduct] = useState(true);

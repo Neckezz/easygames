@@ -374,6 +374,14 @@ $hovered-color:#2f2f2f;
         margin-bottom:200px;
     }   
 @media(min-width:1000px){
+    #value{
+        background-color: red;
+        border-radius: 20px;
+        padding:5px;
+        color:white;
+        margin-top:50px;
+        margin-left:-20px;
+    }
     #burger{
         display:none;
     }
