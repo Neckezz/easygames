@@ -29,7 +29,7 @@ const Header = () => {
                 <ul className="menu">
 
                   <li><Link to={'/register'}><img src={accountB} alt="Account" /></Link></li>
-                  <li className='value'><Link to={'/cart'}><img id='cart' src={cartB} alt="Cart" /></Link>
+                  <li className='value'><img id='cart' src={cartB} alt="Cart" />
                   </li>
                   <li><p id='value'>0</p></li>
                 </ul>

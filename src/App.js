@@ -15,7 +15,6 @@ function App() {
       <Route path="/products/:id" element={<ProductPage/>}/>
       <Route path="/register" element={<RegisterAccount/>}/>
       <Route path="login" element={<LoginPage/>}/>
-      <Route path="/cart"/>
       <Route path="*" element={<Page404 />} />
     </Routes>
     <Footer/>
