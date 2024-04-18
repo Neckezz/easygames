@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.01ea403a.css",
+    "main.js": "/static/js/main.603f15ba.js",
+    "static/media/loading.gif": "/static/media/loading.0b6dafe4b6f64ba82a89.gif",
+    "static/media/baner2.png": "/static/media/baner2.4ca4ff9bd15aaf7f60d9.png",
+    "static/media/pozadina.png": "/static/media/pozadina.8c445eb8d0405054d541.png",
+    "static/media/carousel.png": "/static/media/carousel.fa27f931120d8e3c40c3.png",
+    "static/media/carousel3.png": "/static/media/carousel3.5e09914ee689653fc197.png",
+    "static/media/baner1.png": "/static/media/baner1.0deefab9ec55bc1e20cc.png",
+    "static/media/visa.png": "/static/media/visa.896ed0029b6bcacfa7ed.png",
+    "static/media/logo.png": "/static/media/logo.bec84bda0a6d8b535881.png",
+    "static/media/support.png": "/static/media/support.2e3ba059c87f725bc439.png",
+    "static/media/carousel2.png": "/static/media/carousel2.dae07f7286ba3410b32f.png",
+    "static/media/accountB.png": "/static/media/accountB.152e4568193822add118.png",
+    "static/media/paysafe.png": "/static/media/paysafe.a705845be184eef7d970.png",
+    "static/media/paypal.png": "/static/media/paypal.2a732d90c19bc80504ac.png",
+    "index.html": "/index.html",
+    "main.01ea403a.css.map": "/static/css/main.01ea403a.css.map",
+    "main.603f15ba.js.map": "/static/js/main.603f15ba.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.01ea403a.css",
+    "static/js/main.603f15ba.js"
+  ]
+}
